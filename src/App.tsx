@@ -16,7 +16,12 @@ function App() {
           open modal
         </Button>
         <Modal isOpen={modal} onClose={handleModalClose}>
-          <h1>This is Modal</h1>
+          <Modal.Header>
+            <h1>This is modal title</h1>
+            <Modal.CloseButton />
+          </Modal.Header>
+
+          <p>This is modal content</p>
         </Modal>
       </div>
     </Container>
